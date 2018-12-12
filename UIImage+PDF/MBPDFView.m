@@ -5,10 +5,10 @@
 //  Copyright 2011 Mindbrix Limited. All rights reserved.
 //
 
-#import "PDFView.h"
+#import "MBPDFView.h"
 
 
-@implementation PDFView
+@implementation MBPDFView
 
 @synthesize page = m_page;
 @synthesize resourceName = m_resourceName;
@@ -33,7 +33,7 @@
 {
 	m_resourceName = resourceName;
 	
-    self.resourceURL = [ PDFView resourceURLForName: self.resourceName ];
+    self.resourceURL = [ MBPDFView resourceURLForName: self.resourceName ];
 }
 
 
@@ -54,7 +54,7 @@
 
 +(CGRect) mediaRect:(NSString *)resourceName
 {
-    return [ PDFView mediaRectForURL:[ PDFView resourceURLForName: resourceName ]];
+    return [ MBPDFView mediaRectForURL:[ MBPDFView resourceURLForName: resourceName ]];
 }
 
 

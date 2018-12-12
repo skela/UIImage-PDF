@@ -8,7 +8,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface PDFView : UIView 
+@interface MBPDFView : UIView 
 {
 
 }
